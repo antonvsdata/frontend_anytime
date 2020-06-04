@@ -1,5 +1,4 @@
-$primary-color: #aaa;
-$secondary-color: #d6d631;
+$background-color: #aaa;
 $show-home-image: true;
 $home-image: url(../img/kuopio_scene.jpg);
 $background-opacity: 0.5;
@@ -21,7 +20,7 @@ $logo-height: 188px;
         right: 0;
         width: 100%;
         height: 100%;
-        background: rgba($primary-color, $background-opacity);
+        background: rgba($background-color, $background-opacity);
         z-index: -1;
       }
     }

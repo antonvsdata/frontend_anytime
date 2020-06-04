@@ -1,5 +1,6 @@
 // Menu
 .menu {
+  // Navigation bar starts from the right border of the logo
   position: fixed;
   top: 0;
   left: $logo-width;
@@ -22,6 +23,10 @@
   .nav-item {
     text-align: center;
     flex: 1;
+
+    &.current > a {
+      color: lighten($text-color, 20);
+    }
   }
 
   .nav-link {
@@ -30,6 +35,10 @@
     font-weight: 300;
     text-decoration: none;
     color: $text-color;
+
+    &:hover {
+      color: lighten($text-color, 20);
+    }
   }
 
   .lang-links {

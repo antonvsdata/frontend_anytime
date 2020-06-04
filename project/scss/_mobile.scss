@@ -38,17 +38,12 @@
 
 // Tablets
 @include mediaMd {
-  #logo-container {
-    width: 220px;
-    height: 138px;
-  }
-
   #logo {
-    width: 220x;
+    width: 220px;
     height: 138px;
     background: url(../img/kutes_logo_tiny.png);
     background-repeat: no-repeat;
-    z-index: 2;
+    border-bottom-right-radius: 70%;
   }
   @import "menu_mobile";
 
@@ -67,6 +62,6 @@
 @include mediaSm {
   @import "menu_mobile";
   main#home h1 {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 }

@@ -6,8 +6,7 @@
 
 body {
   @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
+  background: $background-color;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -43,18 +42,11 @@ main {
   padding: 5px 10px 5px 20px;
 }
 
-#logo-container {
-  width: $logo-width;
-  height: $logo-height;
-  background: rgba(#fff, 1);
-  border-bottom-right-radius: 70%;
-}
-
 #logo {
   width: $logo-width;
   height: $logo-height;
   background: url(../img/kutes_logo_small.png);
-  z-index: 2;
+  border-bottom-right-radius: 70%;
 }
 
 @import "mobile";

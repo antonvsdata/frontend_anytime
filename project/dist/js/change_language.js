@@ -33,6 +33,14 @@ const eng = {
     "To contact our society, plese contact our board members by email, or send us a message on Twitter!",
   "join-info":
     "We are delighted to hear that you are interested in our society! To join us, please fill the form below and we will contact you! The membership of our society costs only 30 € per year, and with all the events we organize, it is well worth it!",
+  "first-names": "First names <span class='required'>*</span>",
+  "last-name": "Last name <span class='required'>*</span>",
+  education: "Education / School <span class='required'>*</span>",
+  address: "Address and municipality <span class='required'>*</span>",
+  phone: "Phone number <span class='required'>*</span>",
+  "birth-year": "Birth year <span class='required'>*</span>",
+  email: "Email <span class='required'>*</span>",
+  comments: "Comments",
 };
 
 const fin = {
@@ -46,6 +54,14 @@ const fin = {
     "Jos haluat tietää lisää, ota meihin yhteyttä sähköpostitse tai laita meille viestiä Twitterissä!",
   "join-info":
     "Hienoa, että olet kiinnostunut KuTeS:ista! Liittyminen on helppoa: täytä vain allaoleva lomake, ja palaamme asiaan! Yhdistyksen vuosimaksu on vain 30 euroa, ja käymällä yhdistyksen tapahtumissa saa rahoilleen hyvin vastinetta!",
+  "first-names": "Etunimet",
+  "last-name": "Sukunimi",
+  education: "Koulutus / korkeakoulu <span class='required'>*</span>",
+  address: "Osoite ja kotikunta <span class='required'>*</span>",
+  phone: "Puhelinnumero <span class='required'>*</span>",
+  "birth-year": "Syntymävuosi <span class='required'>*</span>",
+  email: "Sähköposti <span class='required'>*</span>",
+  comments: "Kommentit",
 };
 
 // Default language is Finnish
@@ -73,12 +89,20 @@ const text_elements = [
   "general-info",
   "contact-info",
   "join-info",
+  "first-names",
+  "last-name",
+  "education",
+  "address",
+  "phone",
+  "birth-year",
+  "email",
+  "comments",
 ];
 // Place text for each element on the current page
 function place_text(el) {
   const el_found = document.querySelector("#" + el);
   if (el_found !== null) {
-    el_found.textContent = lang[el];
+    el_found.innerHTML = lang[el];
   }
 }
 text_elements.forEach(place_text);

@@ -1,4 +1,5 @@
 @import "config";
+@import "form";
 
 * {
   box-sizing: border-box;
@@ -37,9 +38,11 @@ main {
 }
 
 .text-box {
-  background: rgba(#eee, 0.8);
+  background: rgba(#eee, 0.7);
   max-width: 960px;
   padding: 5px 10px 5px 20px;
+  border: 2px solid #777;
+  margin-bottom: 2rem;
 }
 
 #logo {

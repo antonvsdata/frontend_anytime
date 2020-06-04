@@ -1,6 +1,6 @@
 // Media query mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
@@ -60,8 +60,21 @@
 
 // Phones
 @include mediaSm {
-  @import "menu_mobile";
   main#home h1 {
     margin-top: 5vh;
+  }
+
+  .form-style-2 input.input-field,
+  .form-style-2 .textarea-field,
+  .form-style-2 .select-field {
+    display: block;
+  }
+
+  .form-style-2 label {
+    text-align: left;
+  }
+
+  .form-style-2 label > span {
+    float: none;
   }
 }

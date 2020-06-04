@@ -13,39 +13,39 @@
   </head>
   <body id="bg-img">
     <header>
+      <a href="index.html" id="logo-link">
+        <div id="logo"></div>
+      </a>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
       <nav class="menu">
         <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="menu-home"> </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="menu-contact"> </a>
+          </li>
           <li class="nav-item current">
-            <a href="index.html" class="nav-link">
-              Etusivu
-            </a>
+            <a href="join.html" class="nav-link" id="menu-join"> </a>
           </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">
-              Yhteystiedot
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="join.html" class="nav-link">
-              Liity jäseneksi
-            </a>
+          <li class="nav-item lang-links">
+            <a href="" class="data-reload nav-link">FIN</a>
+            <span class="nav-link">|</span>
+            <a href="#eng" class="data-reload nav-link">ENG</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="main-heading">Liity jäseneksi</h1>
+    <main id="join">
       <div class="text-box">
-        <p>
-          Jäsenyys tuo mukanaan monia etuja! Liittyminen tapahtuu lomakkeella,
-          joka löytyy
-          <a
-            href="https://yhteiso.tek.fi/alueseura/kuopion-teknillinen-seura-kutes/j%C3%A4seneksi"
-            target="_blank"
-            >TEK:in yhteisö-sivulta</a
-          >
-        </p>
+        <p id="join-info"></p>
       </div>
     </main>
+    <script src="js/change_language.js"></script>
+    <script src="js/mobile.js"></script>
   </body>
 </html>

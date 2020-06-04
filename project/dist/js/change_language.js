@@ -29,6 +29,10 @@ const eng = {
   adipisicing elit. Voluptates repellendus optio vitae praesentium\
   placeat! Cupiditate tempora possimus et, velit error amet maiores aut\
   laborum rerum nemo doloribus ullam! Iste, debitis?",
+  "contact-info":
+    "To contact our society, plese contact our board members by email, or send us a message on Twitter!",
+  "join-info":
+    "We are delighted to hear that you are interested in our society! To join us, please fill the form below and we will contact you! The membership of our society costs only 30 € per year, and with all the events we organize, it is well worth it!",
 };
 
 const fin = {
@@ -38,6 +42,10 @@ const fin = {
   "main-heading": "Kuopion Teknillinen Seura",
   "general-info":
     "Kuopion Teknillisen Seuran eli KuTeSin  tarkoituksena on toimia Kuopiossa ja sen lähiseuduilla asuvien jäsentensä yhdyssiteenä, tukea heidän pyrkimyksiään ja harrastuksiaan sekä edistää suomalaisen teknillisen kirjallisuuden, teknillisten tieteiden, tekniikan, teollisuuden ja talouden kehitystä.",
+  "contact-info":
+    "Jos haluat tietää lisää, ota meihin yhteyttä sähköpostitse tai laita meille viestiä Twitterissä!",
+  "join-info":
+    "Hienoa, että olet kiinnostunut KuTeS:ista! Liittyminen on helppoa: täytä vain allaoleva lomake, ja palaamme asiaan! Yhdistyksen vuosimaksu on vain 30 euroa, ja käymällä yhdistyksen tapahtumissa saa rahoilleen hyvin vastinetta!",
 };
 
 // Default language is Finnish
@@ -63,9 +71,14 @@ const text_elements = [
   "menu-join",
   "main-heading",
   "general-info",
+  "contact-info",
+  "join-info",
 ];
-// Place text
+// Place text for each element on the current page
 function place_text(el) {
-  document.querySelector("#" + el).textContent = lang[el];
+  const el_found = document.querySelector("#" + el);
+  if (el_found !== null) {
+    el_found.textContent = lang[el];
+  }
 }
 text_elements.forEach(place_text);

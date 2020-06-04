@@ -1,0 +1,72 @@
+// Media query mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 1001px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+// Widescreens
+@include mediaXL {
+  @import "menu";
+  .nav-link {
+    font-size: 30px;
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  @import "menu";
+}
+
+// Tablets
+@include mediaMd {
+  #logo-container {
+    width: 220px;
+    height: 138px;
+  }
+
+  #logo {
+    width: 220x;
+    height: 138px;
+    background: url(../img/kutes_logo_tiny.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  @import "menu_mobile";
+
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Phones
+@include mediaSm {
+  @import "menu_mobile";
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}

@@ -13,8 +13,15 @@
   </head>
   <body id="bg-img">
     <header>
-      <div class="logo">
-        <img src="img/kutes_logo_small.png" alt="" />
+      <div id="logo-container">
+        <a href="index.html" id="logo-link">
+          <div id="logo"></div>
+        </a>
+      </div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
       <nav class="menu">
         <ul class="menu-nav">
@@ -27,18 +34,16 @@
           <li class="nav-item">
             <a href="join.html" class="nav-link" id="menu-join"> </a>
           </li>
-          <li class="nav-item">
-            <div class="lang-links">
-              <a href="" class="data-reload nav-link">FIN</a>
-              <span class="nav-link">|</span>
-              <a href="#eng" class="data-reload nav-link">ENG</a>
-            </div>
+          <li class="nav-item lang-links">
+            <a href="" class="data-reload nav-link">FIN</a>
+            <span class="nav-link">|</span>
+            <a href="#eng" class="data-reload nav-link">ENG</a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="home">
-      <h1 id="main-heading">Kuopion Teknillinen Seura</h1>
+      <h1 id="main-heading" class="lg-heading">Kuopion Teknillinen Seura</h1>
       <div class="text-box">
         <p id="general-info">
           Kuopion Teknillinen Seura eli KuTeS on Kuopion alueen tekniikan alalla
@@ -50,5 +55,6 @@
       </div>
     </main>
     <script src="js/change_language.js"></script>
+    <script src="js/mobile.js"></script>
   </body>
 </html>

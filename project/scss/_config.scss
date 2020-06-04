@@ -4,6 +4,8 @@ $show-home-image: true;
 $home-image: url(../img/kuopio_scene.jpg);
 $background-opacity: 0.5;
 $text-color: #1160a8;
+$logo-width: 300px;
+$logo-height: 188px;
 
 @mixin background {
   @if $show-home-image {

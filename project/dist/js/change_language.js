@@ -47,7 +47,7 @@ if (window.location.hash) {
   if (window.location.hash === "#eng") {
     lang = eng;
     // Links are changed so that the user stays on English pages while navigating
-    const menu_links = ["menu-home", "menu-contact", "menu-join"];
+    const menu_links = ["menu-home", "menu-contact", "menu-join", "logo-link"];
     function change_link(el) {
       const menu_link = document.querySelector("#" + el);
       menu_link.href = menu_link.href + "#eng";

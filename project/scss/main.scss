@@ -1,5 +1,4 @@
 @import "config";
-@import "menu";
 
 * {
   box-sizing: border-box;
@@ -21,9 +20,9 @@ h3 {
   margin: 0;
   font-weight: 400;
 
-  &#main-heading {
+  &.lg-heading {
     //color: $text-color;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -33,7 +32,7 @@ main {
   overflow: hidden;
   &#home {
     h1 {
-      margin-top: calc(10vh + #{$logo-height});
+      margin-top: 10vh;
     }
   }
 }
@@ -44,10 +43,18 @@ main {
   padding: 5px 10px 5px 20px;
 }
 
-.logo {
+#logo-container {
   width: $logo-width;
   height: $logo-height;
-  //background: url(../img/kutes_logo_small.png);
   background: rgba(#fff, 1);
   border-bottom-right-radius: 70%;
 }
+
+#logo {
+  width: $logo-width;
+  height: $logo-height;
+  background: url(../img/kutes_logo_small.png);
+  z-index: 2;
+}
+
+@import "mobile";

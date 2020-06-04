@@ -3,6 +3,7 @@ $secondary-color: #d6d631;
 $show-home-image: true;
 $home-image: url(../img/kuopio_scene.jpg);
 $background-opacity: 0.5;
+$text-color: #1160a8;
 
 @mixin background {
   @if $show-home-image {
@@ -23,4 +24,8 @@ $background-opacity: 0.5;
       }
     }
   }
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
 }

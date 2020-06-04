@@ -1,0 +1,40 @@
+$logo-width: 300px;
+$logo-height: 188px;
+
+// Menu
+.menu {
+  position: fixed;
+  top: 0;
+  left: $logo-width;
+  width: calc(100% - #{$logo-width});
+  height: 56px;
+  background: rgba(#fff, 0.8);
+
+  &-nav {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    text-align: center;
+    flex: 1;
+  }
+
+  .nav-link {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .lang-links {
+    text-align: right;
+    margin-right: 1rem;
+  }
+}

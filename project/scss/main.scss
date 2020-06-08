@@ -35,6 +35,15 @@ main {
       margin-top: 10vh;
     }
   }
+
+  &#contact {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  &#join {
+    padding-top: 1rem;
+  }
 }
 
 .text-box {
@@ -50,6 +59,38 @@ main {
   height: $logo-height;
   background: url(../img/kutes_logo_small.png);
   border-bottom-right-radius: 70%;
+}
+
+// Grid layout for contact information
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 1rem;
+  justify-items: center;
+
+  #contact-description {
+    grid-column: 1/4;
+  }
+
+  .contact-img {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+  }
+
+  .contact-person {
+    text-align: center;
+
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      margin: 0;
+    }
+  }
 }
 
 @import "mobile";

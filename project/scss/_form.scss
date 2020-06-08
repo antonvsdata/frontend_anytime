@@ -1,73 +1,86 @@
 // Form style is adapted from https://www.sanwebe.com/2014/08/css-html-forms-designs
+
+.form-container {
+  margin: auto;
+  margin-bottom: 0;
+}
+
 .form-style-2 {
   max-width: 500px;
   padding: 20px 12px 10px 20px;
-}
-.form-style-2-heading {
-  font-weight: bold;
-  font-style: italic;
-  border-bottom: 2px solid #777;
-  margin-bottom: 20px;
-  font-size: 15px;
-  padding-bottom: 3px;
-}
-.form-style-2 label {
-  display: block;
-  margin: 0px 0px 15px 0px;
-}
-.form-style-2 label > span {
-  width: 45%;
-  float: left;
-  padding-top: 4px;
-  padding-right: 5px;
-}
-.form-style-2 span.required {
-  color: red;
-}
 
-.form-style-2 input.input-field,
-.form-style-2 .textarea-field,
-.form-style-2 .select-field {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  border: 1px solid #c2c2c2;
-  box-shadow: 1px 1px 4px #ebebeb;
-  -moz-box-shadow: 1px 1px 4px #ebebeb;
-  -webkit-box-shadow: 1px 1px 4px #ebebeb;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  padding: 7px;
-  outline: none;
-  width: 55%;
-}
-.form-style-2 .input-field:focus,
-.form-style-2 .textarea-field:focus,
-.form-style-2 .select-field:focus {
-  border: 1px solid $text-color;
-}
-.form-style-2 .textarea-field {
-  height: 100px;
-}
-.form-style-2 input[type="submit"],
-.form-style-2 input[type="button"] {
-  border: 1px solid #eee;
-  box-sizing: border-box;
-  padding: 8px 15px 8px 15px;
-  background: #eee;
-  color: $text-color;
-  box-shadow: 1px 1px 4px #dadada;
-  -moz-box-shadow: 1px 1px 4px #dadada;
-  -webkit-box-shadow: 1px 1px 4px #dadada;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  cursor: pointer;
+  &-heading {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #777;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
 
-  &:hover {
-    border: 1px solid $text-color;
+  label {
+    display: block;
+    margin: 0px 0px 15px 0px;
 
-    @include easeOut;
+    > span {
+      width: 45%;
+      float: left;
+      padding-top: 4px;
+      padding-right: 5px;
+
+      .required {
+        color: red;
+      }
+    }
+  }
+
+  input {
+    .input-field,
+    .textarea-field,
+    .select-field {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border: 1px solid #c2c2c2;
+      box-shadow: 1px 1px 4px #ebebeb;
+      -moz-box-shadow: 1px 1px 4px #ebebeb;
+      -webkit-box-shadow: 1px 1px 4px #ebebeb;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      padding: 7px;
+      outline: none;
+      width: 55%;
+
+      &:focus {
+        border: 1px solid $text-color;
+      }
+    }
+
+    .textarea-field {
+      height: 100px;
+    }
+
+    &[type="button"],
+    &[type="submit"] {
+      border: 1px solid #eee;
+      box-sizing: border-box;
+      padding: 8px 15px 8px 15px;
+      background: #eee;
+      color: $text-color;
+      box-shadow: 1px 1px 4px #dadada;
+      -moz-box-shadow: 1px 1px 4px #dadada;
+      -webkit-box-shadow: 1px 1px 4px #dadada;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid $text-color;
+
+        @include easeOut;
+      }
+    }
   }
 }

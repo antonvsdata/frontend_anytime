@@ -56,8 +56,8 @@ const fin = {
   "join-info":
     "Hienoa, että olet kiinnostunut KuTeS:ista! Liittyminen on helppoa: täytä vain allaoleva lomake, ja palaamme asiaan! Yhdistyksen vuosimaksu on vain 30 euroa, ja käymällä yhdistyksen tapahtumissa saa rahoilleen hyvin vastinetta!",
   "form-heading": "Täytä tietosi",
-  "first-names": "Etunimet",
-  "last-name": "Sukunimi",
+  "first-names": "Etunimet <span class='required'>*</span>",
+  "last-name": "Sukunimi <span class='required'>*</span>",
   education: "Koulutus / korkeakoulu <span class='required'>*</span>",
   address: "Osoite ja kotikunta <span class='required'>*</span>",
   phone: "Puhelinnumero <span class='required'>*</span>",

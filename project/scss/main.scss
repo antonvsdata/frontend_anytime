@@ -6,9 +6,8 @@
 }
 
 body {
+  // background image and overlay
   @include background;
-  background: $background-color;
-  height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -21,14 +20,13 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    //color: $text-color;
     font-size: 3rem;
   }
 }
 
+// Settings for the general layout of the three pages
 main {
   padding: 4rem;
-  //min-height: calc(100vh - 60px);
   overflow: hidden;
   &#home {
     h1 {
@@ -54,25 +52,37 @@ main {
   margin-bottom: 2rem;
 }
 
-#logo {
+.logo {
   width: $logo-width;
   height: $logo-height;
   background: url(../img/kutes_logo_small.png);
   border-bottom-right-radius: 70%;
 }
 
+.centered {
+  margin: auto;
+}
+
 // Grid layout for contact information
+// Outer gird giving layout for the description box and contact boxes
+.outer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .text-box:first-child {
+    justify-self: center;
+  }
+}
+// Subgrid for contact information boxes
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // Responsive grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // Set grid properties
   grid-template-rows: minmax(100px, auto);
   grid-auto-rows: minmax(300px, auto);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   justify-items: center;
-
-  #contact-description {
-    grid-column: 1/4;
-  }
 
   .contact-img {
     width: 200px;
@@ -93,4 +103,5 @@ main {
   }
 }
 
+// Settings for responsiveness, choosing the type of menu happens here
 @import "mobile";

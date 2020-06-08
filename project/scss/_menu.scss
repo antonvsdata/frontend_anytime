@@ -25,7 +25,7 @@
     flex: 1;
 
     &.current > a {
-      color: lighten($text-color, 20);
+      color: lighten($kutes-color, 20);
     }
   }
 
@@ -34,10 +34,10 @@
     text-transform: uppercase;
     font-weight: 300;
     text-decoration: none;
-    color: $text-color;
+    color: $kutes-color;
 
     &:hover {
-      color: lighten($text-color, 20);
+      color: lighten($kutes-color, 20);
     }
   }
 

@@ -1,3 +1,20 @@
+// Things to be edited while maintaining website such as board member names and images are here:
+// Board member names and emails
+const board = {
+  chairman: "Diana Dippainssi",
+  secretary: "Iina Insinööri",
+  treasurer: "Teemu Teekkari",
+  "chairman-email": "diana.di at esimerkki.fi",
+  "secretary-email": "iina.inssi at esimerkki.fi",
+  "treasurer-email": "teemu.teekkari at esimerkki.fi",
+};
+// Board member images
+const board_img = {
+  "chairman-img": "chairman.jpg",
+  "secretary-img": "secretary.jpg",
+  "treasurer-img": "treasurer.jpg",
+};
+
 // Language options for each element are stored in dictionaries
 // Idea taken from this conversation: https://dev.to/cecilelebleu/help-how-to-make-a-multilanguage-website-3llc
 const eng = {
@@ -50,21 +67,7 @@ const fin = {
   "treasurer-title": "Rahastonhoitaja",
 };
 
-// Board member names
-const board = {
-  chairman: "Diana Dippainssi",
-  secretary: "Iina Insinööri",
-  treasurer: "Teemu Teekkari",
-  "chairman-email": "diana.di at esimerkki.fi",
-  "secretary-email": "iina.inssi at esimerkki.fi",
-  "treasurer-email": "teemu.teekkari at esimerkki.fi",
-};
-// Board member images
-const board_img = {
-  "chairman-img": "chairman.jpg",
-  "secretary-img": "secretary.jpg",
-  "treasurer-img": "treasurer.jpg",
-};
+// Only code below this, no reason to update
 
 // Functionality for the language buttons
 // Code adapted from https://www.youtube.com/watch?v=PaJrDAmrOB4
@@ -103,7 +106,7 @@ if (window.location.hash) {
 }
 
 // Add board members
-// Recorded in separate dict to not repeat names in all languages
+// Recorded in a separate dict to not repeat names in all languages
 lang = Object.assign({}, lang, board);
 
 // Place text for each element on the current page

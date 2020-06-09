@@ -39,6 +39,8 @@
     .form-style-2 .textarea-field:focus,
     .form-style-2 .select-field:focus {
       border-color: #1160a8; }
+  .form-style-2 .textarea-field {
+    height: 100px; }
   .form-style-2 input[type="button"],
   .form-style-2 input[type="submit"] {
     border: 1px solid #eee;
@@ -57,8 +59,6 @@
     .form-style-2 input[type="submit"]:hover {
       border: 1px solid #1160a8;
       transition: all 0.5s ease-out; }
-  .form-style-2 .textarea-field {
-    height: 100px; }
 
 * {
   box-sizing: border-box; }

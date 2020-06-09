@@ -52,6 +52,10 @@
     }
   }
 
+  .textarea-field {
+    height: 100px;
+  }
+
   input[type="button"],
   input[type="submit"] {
     border: 1px solid #eee;
@@ -71,9 +75,5 @@
       border: 1px solid $kutes-color;
       @include easeOut;
     }
-  }
-
-  .textarea-field {
-    height: 100px;
   }
 }

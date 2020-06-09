@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Kuopio Technical Society webpage" />
+    <meta
+      name="keywords"
+      content="Kuopio, teknillinen seura, technical society, networking"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuopion Teknillinen Seura</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="bg-img">
+    <header>
+      <a href="index.html" id="logo-link">
+        <img src="img/kutes_logo_small.png" alt="" class="logo" />
+      </a>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="menu-home"> </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="menu-contact"> </a>
+          </li>
+          <li class="nav-item current">
+            <a href="join.html" class="nav-link" id="menu-join"> </a>
+          </li>
+          <li class="nav-item lang-links">
+            <a href="" class="data-reload nav-link">FIN</a>
+            <span class="nav-link">|</span>
+            <a href="#eng" class="data-reload nav-link">ENG</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="join">
+      <div class="text-box centered">
+        <p id="join-info"></p>
+        <div class="form-style-2">
+          <div class="form-style-2-heading" id="form-heading"></div>
+          <form action="" method="post">
+            <label for="first-names-input"
+              ><span id="first-names"></span
+              ><input
+                type="text"
+                class="input-field"
+                id="first-names-input"
+                value=""
+            /></label>
+            <label for="last-name-input"
+              ><span id="last-name"></span
+              ><input
+                type="text"
+                class="input-field"
+                id="last-name-input"
+                value=""
+            /></label>
+            <label for="education-input"
+              ><span id="education"></span
+              ><input
+                type="text"
+                class="input-field"
+                id="education-input"
+                value=""
+            /></label>
+            <label for="address-input"
+              ><span id="address"></span
+              ><input
+                type="text"
+                class="input-field"
+                id="address-input"
+                value=""
+            /></label>
+            <label for="phone-input"
+              ><span id="phone"></span
+              ><input type="text" class="input-field" id="phone-input" value=""
+            /></label>
+            <label for="birth-year-input"
+              ><span id="birth-year"></span
+              ><input
+                type="text"
+                class="input-field"
+                id="birth-year-input"
+                value=""
+            /></label>
+            <label for="email-input"
+              ><span id="email"></span
+              ><input type="text" class="input-field" id="email-input" value=""
+            /></label>
+            <label for="comments-input"
+              ><span id="comments"></span
+              ><textarea id="comments-input" class="textarea-field"></textarea>
+            </label>
+
+            <label><span> </span><input type="button" value="Submit" /></label>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/change_language.js"></script>
+    <script src="js/mobile.js"></script>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 ## Coursework for a Front-End Development course
+### Anton Klåvus
 
 This repository contains assignments and a projects for the CT70A9110 Software Development Skills: Front-End Anytime course offered by LUT University.
 

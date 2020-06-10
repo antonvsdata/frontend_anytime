@@ -6,7 +6,7 @@ The folder coursework holds the exercises, made according to the great [videos b
 
 ### The project
 
-The project folder holds my project: A draft of a website for Kuopio Society of Technology (Kuopion Teknillinen Seura).  The website is hosted using GitHub Pages [here](https://antonvsdata.github.io/frontend_anytime/).
+The project folder holds my project: A draft of a website for Kuopio Society of Technology (Kuopion Teknillinen Seura).  The website is hosted using GitHub Pages. [Link to deployed project webiste](https://antonvsdata.github.io/frontend_anytime/).  
 For a tour of the project, see the [video description](https://youtu.be/BISOIrZmS9s).
 
 The project is built with HTML5, Sass and vanilla JavaScript.
@@ -19,7 +19,7 @@ npm init
 npm install sass
 ```
 
-You are then set to modify the project however you see fit!
+You are then set to modify the project however you see fit! To automatically compile the Sass scripts to CSS, run ```npm run sass```.
 
 #### Looking at the code
 
